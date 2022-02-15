@@ -172,12 +172,13 @@ age_btn.addEventListener("click",function(){
     let split_day = Number(split[2]);
     let container2 = document.querySelector(".container2");
     container2.classList.remove("hide");
+    let item2;
     if(age_gender.value == "male"){
-        item = 82;
+        item2 = 82;
     }else if(age_gender.value == "female"){
-        item = 88;
+        item2 = 88;
     }
-    let answer = item - split_age;
+    let answer = item2 - split_age;
 const year = document.getElementById("year");
 const days = document.getElementById("days");
 const hours = document.getElementById("hours");
@@ -186,7 +187,15 @@ const seconds = document.getElementById("seconds");
 
 const currentYear = new Date().getFullYear();
 const future = currentYear + answer;
-const futureTime = new Date(`${split_month} ${split_day} ${future} 00:00:00`);
+// if(split_month < 10){
+//     split_month = "0" + split_month;
+// }
+// if(split_day < 10){
+//     split_day = "0" + split_day;
+// }
+console.log(`${split_month} ${split_day} ${future} 00:00:00`);
+const futureTime = new Date(future, split_month, split_day, 0,0,0);
+console.log(futureTime);
 year.innerText = future;
 
 function updateCountdown(){

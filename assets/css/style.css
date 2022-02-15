@@ -279,11 +279,11 @@ img{
 
 @media screen and (max-width: 500px){
     .start p{
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .main-title{
-        font-size: 70px;
+        font-size: 40px;
     }
 
     .timer-inner{
