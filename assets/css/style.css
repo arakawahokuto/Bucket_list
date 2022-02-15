@@ -1,0 +1,459 @@
+
+html{
+    font-family:'Apple Chancery',sans-serif; 
+}
+
+body{
+    background-image:url("../img/IMG_2397.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+img{
+    max-width: 100%;
+}
+
+.main-title{
+    text-align: center;
+    padding-top: 20%;
+    color: white;
+    font-size: 120px;
+}
+
+.start{
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9000;
+}
+
+.start p{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 9999;
+    font-size: 80px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+
+.timer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly; 
+    margin: 5% auto 10% auto;
+}
+
+.timer-inner{
+    display: flex;
+    margin: 5% auto;
+}
+
+.clock{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-shadow: 0 0 20px #ffbf7f;
+    line-height: 1.2;
+    text-align: center;
+    margin-right: 100px;
+}
+
+.clock-date{
+    font-size: 40px;
+}
+
+.clock-time{
+    font-size: 100px;
+}
+
+#select_gender{
+    border-radius: 10px;
+    border: 1.5px solid #ffbf7f;
+    color: #ffbf7f;
+    outline: none;
+}
+
+.date{
+    width: 200px;
+    border-radius: 10px;
+    border: 1.5px solid #ffbf7f;
+    color: #ffbf7f;
+    outline: none;
+}
+
+.add-age{
+    margin-left: 100px;
+}
+
+.add-age #age-check, .add #check{
+    display: inline-block;
+    padding: 5px 45px;
+    border: solid 3px #ffbf7f;
+    border-radius: 35px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffbf7f;
+    transition: .4s;
+    margin-left: 20px;
+}
+
+.add-age #age-check:hover, .add #check:hover{
+    background: #ffbf7f;
+    color: white;
+}
+
+.add{
+    margin: 0 auto;
+}
+
+.add #dream{
+    width: 300px;
+    height: 2rem;
+    border-radius: 10px;
+    border: 1.5px solid #ffbf7f;
+    
+    outline: none;
+} 
+
+.add-age #age{
+    height: 2rem;
+    margin: 50px auto;
+}
+
+.box{
+    flex-direction: column;
+    margin: auto 5%;
+}
+
+.gender{
+    margin-top: 5%;
+}
+
+.container2{
+    color: white;
+    text-shadow: 0 0 20px #f78514;
+    line-height: 1.2;
+    margin: 7% auto;
+    text-align: center;
+}
+
+.countdown-title{
+    font-family: 'Dancing Script', cursive;
+    font-size: 80px;
+    line-height: 1.2;
+}
+
+.new-year{
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+}
+
+.time-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.container-inner{
+    font-family: 'Dancing Script', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+    font-size: 30px;
+}
+
+.time-num{
+    font-size: 40px;
+    line-height: 1;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hide{
+    display: none;
+}
+
+.add-age{
+    display: flex;
+    align-items: center;
+}
+
+
+.inner{
+    display: flex;
+    flex-direction: column;
+    margin: 5% 0;
+}
+
+
+.memo{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 80%;
+    margin: 10% auto;
+}
+
+
+.memo img{
+    position: relative;
+    margin-top: 30px;
+    width: 700px;
+    height: 800px;
+    margin: 0 auto;
+    filter: opacity(40%);
+}
+
+.list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    width: 500px;
+    margin-top: 10px;
+}
+
+.div-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.success::before{
+    content: "\f058";
+    font-weight: 900;
+    font-family:  "Font Awesome 5 Free";
+}
+
+.success{
+    font-size: 20px;
+	color: rgb(113, 241, 167);
+	cursor: pointer;
+    margin-top: 10px;
+}
+
+.delete::before{
+    content: "\f1f8";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+}
+.delete{
+    font-size: 20px;
+	color: rgb(241, 119, 119);
+	cursor: pointer;
+    align-items: flex-end;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.list-text{
+    max-width: 100%;
+    position: absolute; 
+} 
+
+.footer{
+    font-size: 1rem;
+    padding: 1% 0;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
+
+@media screen and (max-width: 500px){
+    .start p{
+        font-size: 20px;
+    }
+
+    .main-title{
+        font-size: 70px;
+    }
+
+    .timer-inner{
+        flex-direction: column;
+    }
+
+    .clock{
+        margin: 0 auto;
+    }
+
+    .add-age{
+        margin: 10% auto;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .add{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .add-age #age-check, .add #check{
+        margin: 10% auto;
+    }
+
+    .list{
+        flex-direction: column;
+        align-items: center;
+        width: 320px;
+        font-size: 13px;
+    }
+
+    .success, .delete{
+        font-size: 10px;
+    }
+
+    .countdown-title{
+        font-size: 30px;
+    }
+
+    .new-year{
+        font-size: 50px;
+    }
+
+    .time-container{
+        flex-direction: column;
+    }
+
+    .container-inner, .time-num{
+        padding-top: 10px;
+    }
+
+    .clock-date{
+        font-size: 20px;
+    }
+    
+    .clock-time{
+        font-size: 50px;
+    }
+
+}
+
+@media screen and (min-width: 501px) and (max-width: 767px){
+
+    .start p{
+        font-size: 40px;
+    }
+
+    .main-title{
+        font-size: 85px;
+    }
+
+    .timer-inner{
+        flex-direction: column;
+    }
+
+    .clock{
+        margin: 0 auto;
+    }
+
+    .add-age{
+        margin: 10% auto;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .add{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .add-age #age-check, .add #check{
+        margin: 10% auto;
+    }
+
+    .list{
+        flex-direction: column;
+        align-items: center;
+        font-size: 18px;
+    }
+
+    .success, .delete{
+        font-size: 13px;
+    }
+
+    .countdown-title{
+        font-size: 50px;
+    }
+
+    .new-year{
+        font-size: 70px;
+    }
+
+    .time-container{
+        flex-direction: column;
+    }
+
+    .container-inner, .time-num{
+        padding-top: 20px;
+    }
+
+    .clock-date{
+        font-size: 30px;
+    }
+    
+    .clock-time{
+        font-size: 70px;
+    }
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+    .start p{
+        font-size: 50px;
+    }
+
+    .main-title{
+        font-size: 90px;
+    }
+
+    .timer-inner{
+        flex-direction: column;
+    }
+
+    .clock{
+        margin: 0 auto;
+    }
+
+    .add-age{
+        margin: 10% auto;
+    }
+
+    .clock-date{
+        font-size: 40px;
+    }
+    
+    .clock-time{
+        font-size: 85px;
+    }
+
+    .list{
+        font-size: 25px;
+    }
+
+    .success, .delete{
+        font-size: 18px;
+    }
+
+}

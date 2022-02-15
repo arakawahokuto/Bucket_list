@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <script src="https://kit.fontawesome.com/21b2e738bd.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Bucket list</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <h1 class="main-title">Bucket list</h1>
+        </div>
+        <div class="start">
+            <p>Have you left behind?</p>
+        </div>
+    </header>
+    <main>
+        <div class="inner">
+            <div class="timer">
+                <div class="timer-inner">
+                    <div class="container">
+                        <div class="clock">
+                            <p class="clock-date"></p>
+                            <p class="clock-time"></p>
+                        </div>
+                    </div>
+                    <form class="add-age">
+                        <div class="box">
+                            <input type="date" class="date">
+                            <div class="gender">
+                                <select name="gender" id="select_gender">
+                                    <option value="" disabled selected style="display:none;">---gender---</option>
+                                    <option value="male">male</option>
+                                    <option value="female">female</option>
+                                </select>
+                            </div>
+                        </div>
+                        <input type="button" id="age-check" value="Here"></input>
+                    </form>
+                </div>
+                <div class="container2 hide">
+                    <div class="countdown">
+                        <h2 class="countdown-title">Countdown to Your life
+                            <span id="year" class="new-year"></span>
+                        </h2>
+                        <div class="time-container">
+                            <div class="container-inner">
+                                <p class="time"><span id="days" class="time-num"></span>days</p>
+                            </div>
+                            <div class="container-inner">
+                                <p class="time"><span id="hours" class="time-num"></span>hours</p>
+                            </div>
+                            <div class="container-inner">
+                                <p class="time"><span id="minutes" class="time-num"></span>minutes</p>
+                            </div>
+                            <div class="container-inner">
+                                <p class="time"><span id="seconds" class="time-num"></span>seconds</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form class="add">
+                <input type="text" id="dream" placeholder=" Add your dreams" autocomplete="off">
+                <input type="button" id="check" value="Go"></input>
+            </form>
+            <div class="memo">
+                <img src="./assets/img/8b8cd675ea737992713073a2bbbea426.png" alt="">
+                <div class="list-text">
+                    <ul class="text-inner">
+                        <li class="list">
+                            <!-- テキスト -->
+                            <!-- <div class="delete"></div> -->
+                        </li>
+                        <!-- 要素追加 -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <p class="copyright">&copy; Bucket list</p>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
